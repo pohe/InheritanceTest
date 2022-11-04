@@ -36,7 +36,12 @@ namespace InheritanceTest
 				return _baseSalary;
 		}
 
-		public override string ToString()
+        public override int CalculatePension()
+        {
+            return 20000;
+        }
+
+        public override string ToString()
         {
             return $"Subject {_subject} " + base.ToString();
         }

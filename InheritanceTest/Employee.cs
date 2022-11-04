@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InheritanceTest
 {
-    public class Employee
+    public abstract class Employee
     {
 
         protected const int _baseSalary = 25000;
@@ -46,6 +46,9 @@ namespace InheritanceTest
 		{
 			return _baseSalary;
 		}
+
+
+		public abstract int CalculatePension();
 		public override string ToString()
 		{
 			return $"ID {_id} Name {_name} Mobile {_mobile}";

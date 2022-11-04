@@ -21,17 +21,23 @@ namespace InheritanceTest
 			_typingSpeed = typingSpeed;
 		}
 
-        public override int CalculateSalary()
-        {
+		public override int CalculateSalary()
+		{
 			if (_typingSpeed > 500)
 			{
 				return _baseSalary * 2;
 			}
 			else
-				return _baseSalary; 
-        }
+				return _baseSalary;
 
-        public override string ToString()
+		}
+
+		public override int CalculatePension()
+		{
+			return 100000;
+		}
+
+		public override string ToString()
 		{
 			return $"Typingspeed {_typingSpeed} " + base.ToString(); 
 		}
